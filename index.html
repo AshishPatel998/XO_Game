@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ⚡>
+  <head>
+    <meta charset="UTF-8" />
+    <title>XO Game</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div id="loader">Loading...</div>
+
+    <!-- Game Content -->
+    <div class="game-container" style="display: none;">
+      <h1>XO Game</h1>
+      <div id="game-board"></div>
+
+      <!-- AMP Ad Section (Below game board) -->
+      <div class="ad-section">
+        <amp-ad width="100vw" height="320"
+          type="adsense"
+          data-ad-client="ca-pub-8303489454573253"
+          data-ad-slot="7311834603"
+          data-auto-format="rspv"
+          data-full-width="">
+          <div overflow=""></div>
+        </amp-ad>
+      </div>
+    </div>
+
+    <!-- Result Popup -->
+    <div id="result-popup">
+      <div id="result-message"></div>
+      <button onclick="restartGame()">Play Again</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
