@@ -1,0 +1,86 @@
+/* Body and Game Container */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #e6f7ff, #d9f2d9);
+}
+
+.game-container {
+  text-align: center;
+  padding: 30px 10px;
+}
+
+/* Loader */
+#loader {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: #f0f8ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #005580;
+  z-index: 999;
+}
+
+/* Game Board */
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+  justify-content: center;
+  margin: 30px auto;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #ffffcc;
+  border: 2px solid #999966;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cell:hover {
+  background-color: #fffae6;
+}
+
+/* Popup */
+#result-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(230, 255, 242, 0.95);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+#result-popup #result-message {
+  font-size: 2rem;
+  color: #336600;
+  margin-bottom: 20px;
+}
+
+#result-popup button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #cce6cc;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Ad section */
+.ad-section {
+  margin-top: 40px;
+}
